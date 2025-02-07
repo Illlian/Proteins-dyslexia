@@ -42,7 +42,7 @@ df = pd.DataFrame(
     }
 )
 st.dataframe(df)
-st.write("9 genes/proteins associated with the disease Dyslexia from the curated CTD Gene-Disease Associations dataset.")
+st.write("9 genes and proteins associated with the disease Dyslexia from the curated CTD Gene-Disease Associations dataset.")
 # [The Movie Database (TMDB)](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata).
 
 # Load the data from a CSV. We're caching this so it doesn't reload every time the app
