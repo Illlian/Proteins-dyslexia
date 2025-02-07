@@ -7,12 +7,20 @@ import streamlit as st
 
 # Show the page title and description.
 st.set_page_config(page_title="Dyslexia proteins", page_icon="🎬")
-st.title("Dyslexia genes/proteins")
+st.title(" All you need to know about dyslexia")
 st.sidebar.success("Dyslexia genes/proteins")
-#st.title("Dyslexia proteins")
+
 st.write(
     """
-    This website contains information about dyslexia
+    This website contains information about dyslexia.
+    What is dyslexia? A learning disability that affects reading/writing. 
+    People with dyslexia have higher rates of attention deficit hyperactivity disorder (ADHD), 
+    developmental language disorders, and difficulties with numbers.
+    
+    Causes: Exact causes are not clear, but the disorder is likely hereditary. 
+    There are currently 88 genes linked to possibly causing dyslexia. 
+    The main 9 and their characteristics are displayed below.
+    
     """
 )
 df = pd.DataFrame(
