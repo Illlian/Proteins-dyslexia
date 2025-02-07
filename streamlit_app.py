@@ -2,14 +2,47 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+# st.markdown("# Dyslexia genes ")
+# st.sidebar.markdown("# Dyslexia genes ")
+
 # Show the page title and description.
 st.set_page_config(page_title="Dyslexia proteins", page_icon="🎬")
-st.title("Dyslexia proteins")
+st.title("Dyslexia genes/proteins")
+st.sidebar.success("Dyslexia genes/proteins")
+#st.title("Dyslexia proteins")
 st.write(
     """
     This website contains information about dyslexia
     """
 )
+df = pd.DataFrame(
+    {
+        "symbol": ["DYX5", "KIAA0319", "DCDC2", "DYX9", "DYX8", "DYX1C1","DYX1", "DYX3", "DYX6"],
+        "url": [
+            "https://maayanlab.cloud/Harmonizome/gene/DYX5",
+            "https://maayanlab.cloud/Harmonizome/gene/KIAA0319",
+            "https://maayanlab.cloud/Harmonizome/gene/DCDC2",
+            "https://maayanlab.cloud/Harmonizome/gene/DYX9",
+            "https://maayanlab.cloud/Harmonizome/gene/DYX8",
+            "https://maayanlab.cloud/Harmonizome/gene/DYX1C1",
+            "https://maayanlab.cloud/Harmonizome/gene/DYX1",
+            "https://maayanlab.cloud/Harmonizome/gene/DYX3",
+            "https://maayanlab.cloud/Harmonizome/gene/DYX6"
+        ],
+        "name": ["dyslexia susceptibility 5",
+                 "KIAA0319",
+                 "doublecortin domain containing 2",
+                 "dyslexia susceptibility 9",
+                 "dyslexia susceptibility 8",
+                 "dyslexia susceptibility 1 candidate 1",
+                 "dyslexia susceptibility 1",
+                 "dyslexia susceptibility 3",
+                 "dyslexia susceptibility 6"
+                 ],
+    }
+)
+st.dataframe(df)
+st.write("9 genes/proteins associated with the disease Dyslexia from the curated CTD Gene-Disease Associations dataset.")
 # [The Movie Database (TMDB)](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata).
 
 # Load the data from a CSV. We're caching this so it doesn't reload every time the app
