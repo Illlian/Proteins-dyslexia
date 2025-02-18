@@ -15,5 +15,5 @@ A Streamlit app.
 2. Run the app
 
    ```
-   $ streamlit run Genes.py
+   $ streamlit run streamlit_app.py
    ```
