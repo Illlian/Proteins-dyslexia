@@ -6,9 +6,14 @@ from stmol import showmol
 import py3Dmol
 
 
-st.set_page_config(page_title="Proteins")
 st.title("Proteins")
 st.sidebar.success("Proteins")
+
+st.write(
+    """
+    Here is some extra information about specific proteins and genes assosiated with the development of dyslexia.
+    """
+)
 
 # Info about K0319_HUMAN protein
 st.divider()
